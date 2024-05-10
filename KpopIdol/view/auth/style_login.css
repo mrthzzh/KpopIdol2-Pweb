@@ -1,0 +1,80 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+  }
+  
+  
+  .login-container {
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-family: Cambria;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  button {
+    padding: 15px 25px;
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #034184;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group-text {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none; 
+  }
+
+  img {
+    margin-top: 10px;
+    margin-bottom: 400px;
+    position: absolute;
+    width: 70px;
+  }
+  

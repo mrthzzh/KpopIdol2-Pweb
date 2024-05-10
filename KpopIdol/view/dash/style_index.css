@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+body{
+    background: #e2e2e2;
+}
+html {
+	overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: pink;;
+    z-index: 1000;
+    font-family: 'Lato', sans-serif; ;
+
+}
+.sidebar .brand{
+   font-size: 24px; 
+   font-weight: 700;
+   height: 56px;
+   display: flex;
+   align-items: center;
+   color: #000000;
+}
+.sidebar .brand .icon .bx {
+    min-width: 40px;
+    margin-left: 20px;
+}
+.sidebar .side-menu{
+    width: 95%;
+    margin-top: 48px;
+}
+.sidebar .side-menu li{
+    height: 48px;
+    background: transparent;
+    margin-left: 6px;
+    border-radius: 48px 0 0 48px;
+    padding: 4px; 
+}
+.sidebar .side-menu li a{
+    width: 100%;
+    height: 100%;
+    background: palevioletred;
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.sidebar .side-menu li a:hover {
+    color: #ffffff;
+}
+.sidebar .side-menu li a .bx{
+    min-width: calc(60px - ((4px + 6px) * 2));
+    display: flex;
+    justify-content: center;
+
+}
+/* Sidebar */
+.content {
+	position: relative;
+	width: calc(100% - 280px);
+	left: 280px;
+	transition: .3s ease;
+}
+/* Content */
+
+/* Main*/
+.content main{
+    width: 100%;
+    padding: 36px 24px;
+    font-family: 'poppins', sans-serif;
+}
+.content main .head-title{
+    margin-top: -32px;
+}
+.content main .head-title .left h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content main .head-title .left .breadcumb{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+}
+.content main .head-title .left .breadcumb li a{
+    color: #000000;
+}
+
+/* Board*/
+.board{
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: rgb(240, 206, 212);
+    border-radius: 8px;
+    
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px;
+}
+thead td{
+    font-size: 18px;font-weight: 600;
+    text-align: start;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: palevioletred;
+    color: #fff;
+}
+tbody tr td{
+    padding: 20px 20px;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.actions-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-left: -20px;
+}
+.view{
+    font-weight: 500;
+}
+.add{
+    background-color: #ffffff;
+    border-radius: 14px;
+    width: 100px;
+    height: 30px;
+    border-color: transparent;
+    margin-left: 85px;
+}
+.edit{
+    font-weight: 500;
+}
+.delete{
+    font-weight: 500;
+}
+/* Board*/
+/* Main*/
+
+/* Content */
